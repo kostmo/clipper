@@ -2,5 +2,17 @@ clipper
 =======
 
 Haskell bindings for clipper (a C++/C#/Delphi API for 2d polygon algerbric ops)
-
 (c) Chetan Taralekar 2011, 2012
+
+
+Adapted to build against clipper-5.1.6.
+It is assumed to be locally installed, e.g.
+# cd clipper-5.1.6/cpp
+# cmake .
+# sudo cmake install
+
+This package is built with Makefile (driving cabal) to customize C compiler and options,
+clipper lib is in C++, so a number of hacks needs to be applied to adapt.
+
+N.B. pulling clipper C++ lib into cbits results in un-usable ghci,
+search for "ghci weak symbol".
