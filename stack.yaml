@@ -3,4 +3,5 @@ packages:
 - '.'
 extra-deps: []
 flags: {}
+with-gcc: /usr/bin/g++
 extra-package-dbs: []
